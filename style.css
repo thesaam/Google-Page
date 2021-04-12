@@ -6,10 +6,19 @@
 
 body {
   overflow: hidden;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
   margin-bottom: 2rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 nav {
@@ -22,17 +31,12 @@ nav {
 }
 
 nav a {
-  text-decoration: none;
   color: #000;
   padding: 1rem;
 }
 
 nav a:nth-child(2) {
   margin-right: 20px;
-}
-
-nav a:hover {
-  text-decoration: underline;
 }
 
 nav img {
@@ -43,7 +47,7 @@ nav img {
 
 main .upper{
   width: 100%;
-  height: 100vh;
+  height: 75vh;
   margin: auto;
   text-align: center;
   padding: 1rem;
@@ -71,10 +75,14 @@ main img {
 }
 
 .input-area input {
-  width: 35%;
+  width: 40%;
   padding: 1rem;
-  border: 3px rgb(216, 214, 214) solid;
+  border: 2px rgb(216, 214, 214) solid;
   border-radius: 50px;
+}
+
+.input-area input[type="text"]:hover {
+  box-shadow: 5px 5px #f8f9fa, -5px -5px #f8f9fa;
 }
 
 .input-area .fa-search {
@@ -83,6 +91,58 @@ main img {
 
 .input-area .fa-microphone {
   top: 25px;
-  right: 33%;
+  right: 30.5%;
   color: rgb(85, 101, 238);
 }
+
+.upper .btn {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px auto;
+  height: 10%;
+  width: 28%;
+}
+
+.upper .btn button {
+  padding: 1rem;
+  color: #3c4043;
+  width: 200px;
+  margin: auto;
+  cursor: pointer;
+  border: none;
+  background: #f8f9fa;
+  border-radius: 4px;
+}
+
+.upper .btn button:hover {
+  border: 2px #b1b3b6 solid;
+}
+
+footer {
+  width: 100%;
+  color: #0000008A;
+  position: absolute;
+  bottom: 0;
+  background: #e7e7e7;
+}
+
+footer .top-foot {
+  width: 100%;
+  height: 50%;
+  padding: 1rem 2rem;
+  border-bottom: 2px grey solid;
+}
+
+footer .bottom-foot {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  align-items: center;
+}
+
+footer .bottom-foot a {
+  padding: 5px;
+  color: #0000008A;
+  text-align: center;
+}
+
